@@ -1,0 +1,33 @@
+package:
+  name: thallium
+  version: 0.0.0
+
+source:
+  path: .
+#  git_url: https://github.com/hyoklee/mochi-thallium
+#  git_depth: 1
+
+requirements:
+  build:
+    - cereal  
+    - cmake
+    - iowarp::argobots    
+    - iowarp::margo
+    - iowarp::mercury
+  run:
+    - python
+
+test:
+  requires:
+    - cereal  
+    - cmake
+    - iowarp::argobots
+    - iowarp::margo
+    - iowarp::mercury    
+  commands:
+    - pip --help
+
+about:
+  home: https://grc.iit.edu/research/projects/iowarp/
+  license: BSD
+  summary: IOWarp thallium Conda Package
