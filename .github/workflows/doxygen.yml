@@ -1,5 +1,6 @@
 name: Docs
-on: [push, release]
+on: workflow_dispatch 
+# [push, release]
 
 jobs:
   notebooks:
